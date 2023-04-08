@@ -241,7 +241,7 @@
             </dt>
             <dd>Sets the voltage limit for the motor in Volts.</dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a0a9cc213cf2902c200cf9573f11a530c" class="m-doc">setPosPID</a>(</span><span class="m-doc-wrap">pros::motor_pid_full_s_t motor,
+              <span class="m-doc-wrap-bumper">auto <a href="#adb7a1aa679959fb6cb35eb041d0c7cd7" class="m-doc">setPosPID</a>(</span><span class="m-doc-wrap">pros::motor_pid_s_t&amp; motor,
               double ikF,
               double ikP,
               double ikI,
@@ -249,7 +249,7 @@
             </dt>
             <dd>Sets new PID constants.</dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#af5dbf48b9355bb1621c52e94a5327a08" class="m-doc">setPosPIDFull</a>(</span><span class="m-doc-wrap">pros::motor_pid_full_s_t motor,
+              <span class="m-doc-wrap-bumper">auto <a href="#abbc68f480965e1a1eb383cb9c08fbf4f" class="m-doc">setPosPIDFull</a>(</span><span class="m-doc-wrap">pros::motor_pid_full_s_t&amp; motor,
               double ikF,
               double ikP,
               double ikI,
@@ -954,9 +954,9 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="a0a9cc213cf2902c200cf9573f11a530c"><div>
+          <section class="m-doc-details" id="adb7a1aa679959fb6cb35eb041d0c7cd7"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">std::int32_t okapi::<wbr />Motor::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0a9cc213cf2902c200cf9573f11a530c" class="m-doc-self">setPosPID</a>(</span><span class="m-doc-wrap">pros::motor_pid_full_s_t motor,
+              <span class="m-doc-wrap-bumper">std::int32_t okapi::<wbr />Motor::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#adb7a1aa679959fb6cb35eb041d0c7cd7" class="m-doc-self">setPosPID</a>(</span><span class="m-doc-wrap">pros::motor_pid_s_t&amp; motor,
               double ikF,
               double ikP,
               double ikI,
@@ -970,7 +970,7 @@
               <tbody>
                 <tr>
                   <td style="width: 1%">motor</td>
-                  <td></td>
+                  <td>a PROS struct of type motor_pid_s_t so the PID values can be set. Note the arugment is passed by refrence</td>
                 </tr>
                 <tr>
                   <td>ikF</td>
@@ -997,9 +997,9 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="af5dbf48b9355bb1621c52e94a5327a08"><div>
+          <section class="m-doc-details" id="abbc68f480965e1a1eb383cb9c08fbf4f"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">std::int32_t okapi::<wbr />Motor::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af5dbf48b9355bb1621c52e94a5327a08" class="m-doc-self">setPosPIDFull</a>(</span><span class="m-doc-wrap">pros::motor_pid_full_s_t motor,
+              <span class="m-doc-wrap-bumper">std::int32_t okapi::<wbr />Motor::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abbc68f480965e1a1eb383cb9c08fbf4f" class="m-doc-self">setPosPIDFull</a>(</span><span class="m-doc-wrap">pros::motor_pid_full_s_t&amp; motor,
               double ikF,
               double ikP,
               double ikI,
@@ -1017,7 +1017,7 @@
               <tbody>
                 <tr>
                   <td style="width: 1%">motor</td>
-                  <td></td>
+                  <td>a PROS struct of type motor_pid_full_s_t so the PID values can be set. Note the arugment is passed by refrence</td>
                 </tr>
                 <tr>
                   <td>ikF</td>
