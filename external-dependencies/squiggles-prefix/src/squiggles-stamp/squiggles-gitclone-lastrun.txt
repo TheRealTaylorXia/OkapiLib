@@ -1,0 +1,3 @@
+repository='https://github.com/baylessj/robotsquiggles.git'
+module=''
+tag='origin'
