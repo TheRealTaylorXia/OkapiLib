@@ -21,6 +21,7 @@ jobs:
       - name: install arm gcc 
         run: |
           sudo apt update
+          sudo dpkg --configure -a
           sudo apt-get install gcc-arm-none-eabi -f -y
           
       - name: Make
