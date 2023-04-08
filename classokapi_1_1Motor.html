@@ -241,26 +241,6 @@
             </dt>
             <dd>Sets the voltage limit for the motor in Volts.</dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#adb7a1aa679959fb6cb35eb041d0c7cd7" class="m-doc">setPosPID</a>(</span><span class="m-doc-wrap">pros::motor_pid_s_t&amp; motor,
-              double ikF,
-              double ikP,
-              double ikI,
-              double ikD) -&gt; std::int32_t <span class="m-label m-flat m-warning">virtual</span></span>
-            </dt>
-            <dd>Sets new PID constants.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#abbc68f480965e1a1eb383cb9c08fbf4f" class="m-doc">setPosPIDFull</a>(</span><span class="m-doc-wrap">pros::motor_pid_full_s_t&amp; motor,
-              double ikF,
-              double ikP,
-              double ikI,
-              double ikD,
-              double ifilter,
-              double ilimit,
-              double ithreshold,
-              double iloopSpeed) -&gt; std::int32_t <span class="m-label m-flat m-warning">virtual</span></span>
-            </dt>
-            <dd>Sets new PID constants.</dd>
-            <dt>
               <span class="m-doc-wrap-bumper">auto <a href="#a57d8ddb900475fcfba56413e61e6e252" class="m-doc">getEncoder</a>(</span><span class="m-doc-wrap">) -&gt; std::shared_ptr&lt;<a href="classokapi_1_1ContinuousRotarySensor.html" class="m-doc">ContinuousRotarySensor</a>&gt; <span class="m-label m-flat m-warning">override</span></span>
             </dt>
             <dd>Sets new PID constants.</dd>
@@ -954,112 +934,6 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="adb7a1aa679959fb6cb35eb041d0c7cd7"><div>
-            <h3>
-              <span class="m-doc-wrap-bumper">std::int32_t okapi::<wbr />Motor::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#adb7a1aa679959fb6cb35eb041d0c7cd7" class="m-doc-self">setPosPID</a>(</span><span class="m-doc-wrap">pros::motor_pid_s_t&amp; motor,
-              double ikF,
-              double ikP,
-              double ikI,
-              double ikD) <span class="m-label m-warning">virtual</span></span></span>
-            </h3>
-            <p>Sets new PID constants.</p>
-            <table class="m-table m-fullwidth m-flat">
-              <thead>
-                <tr><th colspan="2">Parameters</th></tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="width: 1%">motor</td>
-                  <td>a PROS struct of type motor_pid_s_t so the PID values can be set. Note the arugment is passed by refrence</td>
-                </tr>
-                <tr>
-                  <td>ikF</td>
-                  <td>the feed-forward constant</td>
-                </tr>
-                <tr>
-                  <td>ikP</td>
-                  <td>the proportional constant</td>
-                </tr>
-                <tr>
-                  <td>ikI</td>
-                  <td>the integral constant</td>
-                </tr>
-                <tr>
-                  <td>ikD</td>
-                  <td>the derivative constant</td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <th>Returns</th>
-                  <td>1 if the operation was successful or PROS_ERR if the operation failed, setting errno.</td>
-                </tr>
-              </tfoot>
-            </table>
-          </div></section>
-          <section class="m-doc-details" id="abbc68f480965e1a1eb383cb9c08fbf4f"><div>
-            <h3>
-              <span class="m-doc-wrap-bumper">std::int32_t okapi::<wbr />Motor::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abbc68f480965e1a1eb383cb9c08fbf4f" class="m-doc-self">setPosPIDFull</a>(</span><span class="m-doc-wrap">pros::motor_pid_full_s_t&amp; motor,
-              double ikF,
-              double ikP,
-              double ikI,
-              double ikD,
-              double ifilter,
-              double ilimit,
-              double ithreshold,
-              double iloopSpeed) <span class="m-label m-warning">virtual</span></span></span>
-            </h3>
-            <p>Sets new PID constants.</p>
-            <table class="m-table m-fullwidth m-flat">
-              <thead>
-                <tr><th colspan="2">Parameters</th></tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="width: 1%">motor</td>
-                  <td>a PROS struct of type motor_pid_full_s_t so the PID values can be set. Note the arugment is passed by refrence</td>
-                </tr>
-                <tr>
-                  <td>ikF</td>
-                  <td>the feed-forward constant</td>
-                </tr>
-                <tr>
-                  <td>ikP</td>
-                  <td>the proportional constant</td>
-                </tr>
-                <tr>
-                  <td>ikI</td>
-                  <td>the integral constant</td>
-                </tr>
-                <tr>
-                  <td>ikD</td>
-                  <td>the derivative constant</td>
-                </tr>
-                <tr>
-                  <td>ifilter</td>
-                  <td>a constant used for filtering the profile acceleration</td>
-                </tr>
-                <tr>
-                  <td>ilimit</td>
-                  <td>the integral limit</td>
-                </tr>
-                <tr>
-                  <td>ithreshold</td>
-                  <td>the threshold for determining if a position movement has reached its goal</td>
-                </tr>
-                <tr>
-                  <td>iloopSpeed</td>
-                  <td>the rate at which the PID computation is run (in ms)</td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <th>Returns</th>
-                  <td>1 if the operation was successful or PROS_ERR if the operation failed, setting errno.</td>
-                </tr>
-              </tfoot>
-            </table>
-          </div></section>
           <section class="m-doc-details" id="a57d8ddb900475fcfba56413e61e6e252"><div>
             <h3>
               <span class="m-doc-wrap-bumper">std::shared_ptr&lt;<a href="classokapi_1_1ContinuousRotarySensor.html" class="m-doc">ContinuousRotarySensor</a>&gt; okapi::<wbr />Motor::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a57d8ddb900475fcfba56413e61e6e252" class="m-doc-self">getEncoder</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">override</span></span></span>
@@ -1069,7 +943,7 @@
               <tfoot>
                 <tr>
                   <th style="width: 1%">Returns</th>
-                  <td><code>1</code> if the operation was successful or <code>PROS_ERR</code> if the operation failed, setting errno. Sets new PID constants.</td>
+                  <td>1 if the operation was successful or PROS_ERR if the operation failed, setting errno. Sets new PID constants.</td>
                 </tr>
               </tfoot>
             </table>
