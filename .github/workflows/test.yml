@@ -17,8 +17,14 @@ jobs:
 
       - name: Update Submodules
         run: git submodule update --init --recursive
+      
+      - name: Install CMake
+        run: sudo apt-get -y install cmake
+      
+      - name: Run CMake
+        run: sudo cmake ./
         
-      - name: Make
+      - name: Make the Build
         run: make
 
       - name: Make Template
