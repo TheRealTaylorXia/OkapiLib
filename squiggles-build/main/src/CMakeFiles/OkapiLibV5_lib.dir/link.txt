@@ -1,2 +1,0 @@
-/usr/bin/ar qc libOkapiLibV5_lib.a  CMakeFiles/OkapiLibV5_lib.dir/io.cpp.o CMakeFiles/OkapiLibV5_lib.dir/main.cpp.o CMakeFiles/OkapiLibV5_lib.dir/quinticpolynomial.cpp.o CMakeFiles/OkapiLibV5_lib.dir/spline.cpp.o CMakeFiles/OkapiLibV5_lib.dir/tankmodel.cpp.o
-/usr/bin/ranlib libOkapiLibV5_lib.a

@@ -1,4 +1,0 @@
-/home/willxu/repos/BLRS/OkapiLib/external-dependencies/CMakeFiles/rebuild_cache.dir
-/home/willxu/repos/BLRS/OkapiLib/external-dependencies/CMakeFiles/edit_cache.dir
-/home/willxu/repos/BLRS/OkapiLib/external-dependencies/CMakeFiles/squiggles.dir
-/home/willxu/repos/BLRS/OkapiLib/external-dependencies/CMakeFiles/googletest.dir

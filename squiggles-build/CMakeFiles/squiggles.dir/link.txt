@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsquigglesd.a  CMakeFiles/squiggles.dir/main/src/io.cpp.o CMakeFiles/squiggles.dir/main/src/main.cpp.o CMakeFiles/squiggles.dir/main/src/quinticpolynomial.cpp.o CMakeFiles/squiggles.dir/main/src/spline.cpp.o CMakeFiles/squiggles.dir/main/src/tankmodel.cpp.o
-/usr/bin/ranlib libsquigglesd.a
