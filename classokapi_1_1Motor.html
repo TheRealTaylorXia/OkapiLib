@@ -243,7 +243,7 @@
             <dt>
               <span class="m-doc-wrap-bumper">auto <a href="#a57d8ddb900475fcfba56413e61e6e252" class="m-doc">getEncoder</a>(</span><span class="m-doc-wrap">) -&gt; std::shared_ptr&lt;<a href="classokapi_1_1ContinuousRotarySensor.html" class="m-doc">ContinuousRotarySensor</a>&gt; <span class="m-label m-flat m-warning">override</span></span>
             </dt>
-            <dd>Sets new PID constants.</dd>
+            <dd>Get the encoder associated with this motor.</dd>
             <dt>
               <span class="m-doc-wrap-bumper">void <a href="#a262c36a80a942d125e574d691b77b440" class="m-doc">controllerSet</a>(</span><span class="m-doc-wrap">double ivalue) <span class="m-label m-flat m-warning">override</span></span>
             </dt>
@@ -938,12 +938,12 @@
             <h3>
               <span class="m-doc-wrap-bumper">std::shared_ptr&lt;<a href="classokapi_1_1ContinuousRotarySensor.html" class="m-doc">ContinuousRotarySensor</a>&gt; okapi::<wbr />Motor::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a57d8ddb900475fcfba56413e61e6e252" class="m-doc-self">getEncoder</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">override</span></span></span>
             </h3>
-            <p>Sets new PID constants.</p>
+            <p>Get the encoder associated with this motor.</p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
                   <th style="width: 1%">Returns</th>
-                  <td>1 if the operation was successful or PROS_ERR if the operation failed, setting errno. Sets new PID constants.</td>
+                  <td>The encoder for this motor.</td>
                 </tr>
               </tfoot>
             </table>
